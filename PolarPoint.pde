@@ -27,4 +27,8 @@ class PolarPoint {
     float y = this.radius*sin(this.angle);
     return new PVector(x, y);
   }
+  
+  void rotate(float _angle){
+    this.angle += _angle;
+  }
 }
