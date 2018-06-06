@@ -20,8 +20,6 @@ class PolarPoint {
     return this.angle;
   }
 
-
-
   PVector getCartesian() {
     float x = this.radius*cos(this.angle);
     float y = this.radius*sin(this.angle);
