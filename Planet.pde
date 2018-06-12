@@ -100,7 +100,7 @@ class Planet {  //<>//
     acceleration.set(radialVector).setMag(G*attractor.mass/(dist*dist));
   }
 
-  //Orbit calculations. Pretty messy now but works somehow...
+  //Orbit calculations. Pretty messy now but works good...
   void calcOrbit(Attractor a) {
     PVector radial = PVector.sub(this.position, a.position);
     float initHeading = radial.heading()*180/PI+180.0f;

@@ -20,15 +20,13 @@ class PolarPoint {
     return this.angle;
   }
 
-
-
   PVector getCartesian() {
     float x = this.radius*cos(this.angle);
     float y = this.radius*sin(this.angle);
     return new PVector(x, y);
   }
   
-  void rotate(float _angle){
+  void rotatePoint(float _angle){
     this.angle += _angle;
   }
 }
