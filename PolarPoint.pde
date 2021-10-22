@@ -8,7 +8,7 @@ class PolarPoint {
   }
 
   PolarPoint(PVector cartesianPoint) {
-    this.angle  = atan(cartesianPoint.y/cartesianPoint.x);
+    this.angle  = cartesianPoint.heading2D() ;
     this.radius = PVector.dist(cartesianPoint, new PVector(0, 0));
   }
 
@@ -28,5 +28,9 @@ class PolarPoint {
   
   void rotatePoint(float _angle){
     this.angle += _angle;
+  }
+
+  void dilatePoint(float scaleFactor){
+    this.radius *= scaleFactor;
   }
 }

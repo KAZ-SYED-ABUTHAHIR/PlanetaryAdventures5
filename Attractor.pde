@@ -10,7 +10,7 @@ class Attractor {
 
   Attractor() {
     this.position = new PVector(0,0);
-    this.mass = 1000;
+    this.mass = 2000;
   }
 
   void show() {
